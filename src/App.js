@@ -8,12 +8,12 @@ import JokeDescription from './pages/JokeDescription/JokeDescription';
 function App() {
   return (
     <div className="App">
+
       <BrowserRouter>
       <Navbar/>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/:Keyy" element={<Home />} />
-          {/* <Route path="/joke" element={<Joke />} /> */}
+          <Route path="/:item" element={<Home />} />
           <Route exact path="/joke/:id" element={<JokeDescription />}></Route>
         </Routes>
         <Footer/>
